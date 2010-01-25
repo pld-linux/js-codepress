@@ -8,6 +8,7 @@ Source0:	http://codepress.sourceforge.net/download/codepress-v.%{version}.zip
 # Source0-md5:	7d682bfdeac92abcbd4fe5414342ae61
 URL:		http://codepress.sourceforge.net/
 BuildRequires:	sed >= 4.0
+BuildRequires:	unzip
 Obsoletes:	codepress
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
