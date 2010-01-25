@@ -1,17 +1,18 @@
 Summary:	Online Real Time Syntax Highlighting Editor
-Name:		codepress
+Name:		js-codepress
 Version:	0.9.6
 Release:	0.1
 License:	LGPL 2.1
 Group:		Applications/WWW
-Source0:	http://www.codepress.org/download/%{name}-v.%{version}.zip
+Source0:	http://codepress.sourceforge.net/download/codepress-v.%{version}.zip
 # Source0-md5:	7d682bfdeac92abcbd4fe5414342ae61
-URL:		http://www.codepress.org/
+URL:		http://codepress.sourceforge.net/
 BuildRequires:	sed >= 4.0
+Obsoletes:	codepress
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_appdir	%{_datadir}/%{name}
+%define		_appdir	%{_datadir}/codepress
 
 %description
 CodePress is web-based source code editor with syntax highlighting
